@@ -40,7 +40,7 @@ class QGen:
         model = T5ForConditionalGeneration.from_pretrained('Parth/result')
         device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
         model.to(device)
-        # model.eval()
+        # model.eval() 
         self.device = device
         self.model = model
         self.nlp = spacy.load('en_core_web_sm')
